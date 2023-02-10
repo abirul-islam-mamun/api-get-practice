@@ -79,6 +79,22 @@ ul {
 #mouse-event {
     height: 200px;
     width: 200px;
-    background: #b8b8bb;
+    background: #0b061f;
     margin: 10px auto;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#mouse-event .onclick {
+    height: 50px;
+    width: 100px;
+    background: #7d2ae8;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 40px #7d2ae8;
+    cursor: pointer;
 }

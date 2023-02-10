@@ -43,10 +43,18 @@
 // })
 
 
-function clickfunction () {
-    document.getElementById('mouse-event').innerHTML = alert("hello")
-}
+// function clickfunction () {
+//     document.getElementById('mouse-event').innerHTML = alert("hello")
+// }
 
+
+const onbtn = document.querySelector('.onclick');
+
+onbtn.addEventListener('click', function (){
+    onbtn.style.background = "#ffac09";
+    onbtn.style.boxShadow = "0 0 40px #ffac09";
+    onbtn.style.transition = ".3s ease";
+})
 
 
 
