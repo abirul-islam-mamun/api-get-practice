@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="head-top">
+        <div class="logo"><h2>Logo</h2></div>
+        <ul class="mainmenu">
+            <li class="active"><a href="https://www.google.com/" target="blank">Home</a></li>
+            <li><a href="facebook.com" target="blank">About</a></li>
+            <li><a href="#">Service</a></li>
+        </ul>        
+    </header>
+
+    <main>
+<!-- input form (keyPress, onkeydown, onkeyup) start -->
+        <div class="input-form-keybord">
+            <h4>Keyborad Press function</h4>
+<!-- যখন কিবো.তে প্রেস করি আগে ‍এলারট আসে তারপর লেখা হয় এবং ডিলেটের সময়ও একইরকম কাজ করে   -->
+            <label for="onkeydown">OnKeyDown</label><br> 
+            <input type="text" required onkeydown="document.getElementsByClassName(input-form-keybord)
+            .style.background=this.value"> <br><br>
+
+<!-- যখন কিবো.তে প্রেস করি আগে ‍এলারট আসে তারপর লেখা হয় এবং ডিলেটের সময় কোনো এলারট আসবে না।   -->
+            <label for="keyPress">Keypress</label><br>
+            <input type="text" required onkeypress="alert(this.value)"> <br><br>
+
+<!-- যখন কিবো.তে প্রেস করি টেক্সট লেখার পর লেখাসহ ‍এলারট আসে। এবং ডিলেটের সময় ডিলেট হয় এবং এলারট আসে।   -->
+            <label for="onekeyup">OnKeyup</label><br>
+            <input type="text" required onkeyup="alert(this.value)"><br><br>
+        </div>
+<!-- input form (keyPress, onkeydown, onkeyup) end -->
+
+
+
+<!-- mouse event (7: onclick, dbclick, etc) start -->
+<div id="mouse-event" onclick="clickfunction ()">
+
+</div>
+
+
+
+
+        <ul class="main-list">
+        </ul>
+
+
+        <!-- <div class="input-field">
+            <label for="name">name</label>
+            <input type="text" id="name"> <br> <br>
+            <label for="email"></label>
+            <input type="email" class="email">
+        </div> -->
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
